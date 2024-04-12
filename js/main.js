@@ -245,9 +245,10 @@ const setLanguage=(lang)=>{
     })
 
 }
-window.addEventListener(("load"),()=>{
-    setLanguage("chineese")
-})
+setLanguage("chineese")
+// window.addEventListener(("load"),()=>{
+//     setLanguage("chineese")
+// })
 
 // logic chang
 
