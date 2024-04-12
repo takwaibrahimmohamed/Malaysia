@@ -19,7 +19,7 @@
     <meta name="twitter:creator" content="" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<link rel="stylesheet" href="css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="https://malaysiakliatour.com/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://malaysiakliatour.com/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://malaysiakliatour.com/favicon/favicon-16x16.png">
@@ -84,6 +84,7 @@
     <link rel='stylesheet' href="https://malaysiakliatour.com/assets/css/animate.min.css">
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel='stylesheet' href="https://malaysiakliatour.com/custom/css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
@@ -98,52 +99,73 @@
     <div id="loader-overflow">
         <div id="loader3">Please enable JS</div>
     </div>
-
+  
     <div id="wrap" class="boxed">
-        <div class="page-section ">
+        
+        <div class="page-section " style="position: relative;">
+            <div class="select-menu" style="position: absolute;z-index: 11;right: 0;">
+                <div class="select">
+                  <span style="display: flex;align-items: center;gap: 20px;">
+                    <img style="width: 20px;" src="https://flagicons.lipis.dev/flags/4x3/cn.svg" alt="flag-us"><span>chineese</span></span>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="options-list">
+                  <div class="option" style="display: flex;align-items: center;gap: 20px;"> 
+                    <img style="width: 20px;" src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="flag-us"> <span>english</span></div>
+                  <div class="option"  style="display: flex;align-items: center;gap: 20px;"><img style="width: 20px;" src="https://flagicons.lipis.dev/flags/4x3/cn.svg" alt="flag-us">chineese</div>
+                  
+                </div>
+              </div>
+            
+            <!-- <select style="position: fixed;z-index: 11;color: white;">
+               
+                <option value="chineese" selected>chineese</option>
+                <option value="english" style="color: black;">
+                   <span> <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="flag-us"> english</span></option>
+            </select> -->
             <div class="section-center img-overlay">
 
             </div>
             <div class="work-proc-1-bg">
+                
                 <div class="container fes4-cont">
                     <div class="row">
 
                         <div class="col-md-12 fes7-text-cont p-80-cont">
                             <div class="fes4-box wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                                <h1 class="special-title font-white">Our Transport Services</h1>
+                                <h1 class="special-title font-white" data-i18n="special_title">我们的运输服务</h1>
                             </div>
-                            <p class="mb-60 font-white text-center">
-                                Discover our premium transport services, encompassing klia/klia2/Subang/ Johor Bahru/Pulau Pinang airport transfer., hotel transfers, holiday packages and transportation for exploring the vibrant destinations. We prioritize your comfort, safety, and convenience,
-                                offering expert chauffeurs and well-maintained vehicles. Whether you're arriving, departing, or sightseeing, we're here to make your journey seamless and memorable.
+                            <p class="mb-60 font-white text-center" data-i18n="special_paragraph">
+                                探索我们的优质交通服务，包括 klia/klia2/梳邦/新山/槟城机场接送、酒店接送、度假套餐以及探索充满活力的目的地的交通。我们优先考虑您的舒适、安全和便利，提供专业的司机和维护良好的车辆。无论您抵达、离开还是观光，我们都会让您的旅程顺利而难忘    
                             </p>
-                            <p class="fs-21 bold font-white text-center">We Provide:</p>
+                            <p class="fs-21 bold font-white text-center" data-i18n="provide">我们提供：</p>
 
                             <div class="row">
                                 <div class="col-12 col-md-3">
                                     <div class="transport-box">
                                         <img src="https://malaysiakliatour.com/custom/Icon/aircraft.png" width="46" alt="">
-                                        <h3><span class="font-white bold">KLIA & KLIA 2 Airport Transport</span></h3>
+                                        <h3><span class="font-white bold" data-i18n="KLIA">KLIA 和 KLIA 2 机场交通</span></h3>
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-md-3">
                                     <div class="transport-box">
                                         <img src="https://malaysiakliatour.com/custom/Icon/airport.png" width="46" alt="">
-                                        <h3><span class="font-white bold">Johor Bahru Airport Transport</span></h3>
+                                        <h3><span class="font-white bold" data-i18n="Johor">新山机场交通</span></h3>
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-md-3">
                                     <div class="transport-box">
                                         <img src="https://malaysiakliatour.com/custom/Icon/hotel.png" width="46" alt="">
-                                        <h3><span class="font-white bold">Hotel Transport</span></h3>
+                                        <h3><span class="font-white bold" data-i18n="Hotel">酒店交通</span></h3>
                                     </div>
                                 </div>
 
                                 <div class="col-12 col-md-3">
                                     <div class="transport-box">
                                         <img src="https://malaysiakliatour.com/custom/Icon/merlion.png" width="46" alt="">
-                                        <h3><span class="font-white bold">Singapore & Penang Transport</span></h3>
+                                        <h3><span class="font-white bold" data-i18n="Singapore">新加坡和槟城交通</span></h3>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +177,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="grey-bg">
             <div id="about" class="page-section">
                 <div class="img-overlay">
@@ -172,17 +194,17 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="fes1-main-title-cont wow fadeInDown">
-                                        <div class="title-fs-60 font-white bold text-sm-center text-lg-left">
-                                            Start from <span class="bold">RM99</span>/ pax<br>
+                                        <div class="title-fs-60 font-white bold text-sm-center text-lg-left" data-i18n="startRm">
+                                            从...开始 <span class="bold">RM99</span>/ 人数<br>
                                         </div>
                                     </div>
-                                    <h1 class="font-white bold text-sm-center text-lg-left"><span class="bold">Experience the
-                                        Best Journey with
-                                        the Most
-                                        Affordable Price</span></h1>
+                                    <h1 class="font-white bold text-sm-center text-lg-left"><span class="bold" data-i18n="Experience">体验
+                                        最佳旅程
+                                        最多
+                                        可接受的价格</span></h1>
                                     <div class="fes2-text-cont wow fadeIn font-white bold text-sm-center text-lg-left">
-                                        <p> Embark on an unforgettable journey that combines quality and affordability with our chauffeured tour. Our curated experiences offer you the best of travel without compromising your budget. Choose from a variety
-                                            of travel packages and enjoy the ultimate adventure at the most competitive prices
+                                        <p data-i18n="Embark"> 通过我们的专职司机之旅，踏上一次难忘的旅程，将品质与价格相结合。我们精心策划的体验为您提供最佳的旅行体验，同时又不影响您的预算。多种选择
+                                            旅行套餐，以最具竞争力的价格享受终极冒险
                                         </p>
                                     </div>
                                 </div>
@@ -204,31 +226,31 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
                         <h2 class="font-black mb-60 bold">
-                            <span class="bold">
-                            Airport Klia from/to Kuala Lumpur City.
+                            <span class="bold" data-i18n="Airport">
+                                吉隆坡国际机场往返吉隆坡市。
                         </span>
                         </h2>
 
 
                         <ul class="icon-list mb-50">
                             <li>
-                                <i class="fa fa-star"></i>&nbsp; Sedan Car RM100
+                                <i class="fa fa-star"></i><span data-i18n="Sedan">&nbsp; 轿车 RM100</span>
                             </li>
                             <li>
-                                <i class="fa fa-star"></i>&nbsp; SUV Car RM130
+                                <i class="fa fa-star" ></i><span data-i18n="SUV">&nbsp; SUV车 RM130</span> 
                             </li>
                             <li>
-                                <i class="fa fa-star"></i>&nbsp; MPV RM160
+                                <i class="fa fa-star" ></i><span data-i18n="MPV">&nbsp; 多用途车 RM160</span>
                             </li>
                             <li>
-                                <i class="fa fa-star"></i>&nbsp; XL MPV RM250
+                                <i class="fa fa-star" ></i><span data-i18n="XL">&nbsp; XL MPV RM250</span>
                             </li>
                             <li>
-                                <i class="fa fa-star"></i>&nbsp; 10 Seater Comfort Van RM300
+                                <i class="fa fa-star" ></i><span data-i18n="Seater">&nbsp; 10 座舒适面包车 RM300</span>
                             </li>
                         </ul>
 
-                        <p class="small">* Midnight trip subject to surcharge</p>
+                        <p class="small" data-i18n="Midnight">* 午夜行程需支付附加费</p>
                     </div>
                 </div>
             </div>
@@ -239,17 +261,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-center font-black mb-60 bold"><span class="bold">Go "Cuti-Cuti Malaysia" with
-                            affordable budget, start from RM 99 / pax
+                        <h2 class="text-center font-black mb-60 bold"><span class="bold" data-i18n="Cuti">去“Cuti-Cuti Malaysia”吧
+                            实惠的预算，每人 RM 99 起
                     </h2>
 
-                    <p class="text-center" style="margin-bottom: 80px">
-                        Embark on a budget-friendly Malaysian adventure with our tour packages, exploring all 10
-                        states. From the lively streets of Kuala Lumpur to the tranquil beaches of Langkawi, our
-                        itineraries promise a diverse experience. Discover the rich heritage of Melaka and the
-                        vibrant culture of Penang. We offer affordable, quality travel, ensuring you can explore
-                        Malaysia's beauty without breaking the bank. Let us guide you through this extraordinary
-                        journey, creating lasting memories in every state.
+                    <p class="text-center" style="margin-bottom: 80px" data-i18n="fes4Text">
+                        通过我们的旅游套餐踏上经济实惠的马来西亚冒险之旅，探索所有 10 个景点
+                        状态。从吉隆坡热闹的街道到兰卡威宁静的海滩，我们的
+                        行程保证了多样化的体验。探索马六甲的丰富遗产和
+                        充满活力的槟城文化。我们提供实惠、优质的旅行，确保您可以探索
+                        马来西亚的美丽无需花费太多。让我们引导您度过这个非凡的时刻
+                        旅程，在每一个状态都留下永恒的回忆。
                     </p>
                 </div>
             </div>
@@ -258,71 +280,71 @@
 
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/kuala-lumpur">
+                            href="Pages/kuala_lumpur/kuala-lumpur.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
-                                    style="margin-top: auto;">KL City day tour 4 person RM500 only</strong>
+                                    style="margin-top: auto;" data-i18n="KL_City">吉隆坡市区一日游4人只需RM500</strong>
                             </h2>
                             <div class="post-prev-img">
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/YxRHUxrJrCfH5Mur0NnodF9yBwVTUeXxBqxDoEdU.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Kuala Lumpur TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/kuala-lumpur');" href="https://malaysiakliatour.com/trip/states/kuala-lumpur"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Kuala">吉隆坡之旅</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/kuala_lumpur/kuala-lumpur.html');" href="Pages/kuala_lumpur/kuala-lumpur.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/selangor">
+                            href="Pages/selangor/selangor.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
-                                    style="margin-top: auto;">Batu Cave and Genting Highlands day tour 4 person RM600 only</strong>
+                                    style="margin-top: auto;" data-i18n="Batu">黑风洞 & 云顶高原一日游 4 人只需 RM600</strong>
                             </h2>
                             <div class="post-prev-img">
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/TQMkj53DY6rK3IiFU7TOIHvTfiqXXILcdVcS5rwC.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Selangor TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/selangor');" href="https://malaysiakliatour.com/trip/states/selangor"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Selangor">雪兰莪旅游</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/selangor/selangor.html');" href="Pages/selangor/selangor.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/penang">
+                            href="Pages/penang/penang.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
-                                    style="margin-top: auto;">KL to Penang Transfer 4 person RM600 only</strong>
+                                    style="margin-top: auto;" data-i18n="KL_Penang">吉隆坡至槟城接送 4 人只需 RM600</strong>
                             </h2>
                             <div class="post-prev-img">
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/owJmZOQtBgGNUCzqujB16p78WDKWjQgZyHzG1yQp.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Penang TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/penang');" href="https://malaysiakliatour.com/trip/states/penang"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Penang">槟城旅游</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/penang/penang.html');" href="Pages/penang/penang.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/melaka">
+                            href="Pages/melaka/melaka.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
-                                    style="margin-top: auto;">Melaka day tour 4 person RM600 only</strong>
+                                    style="margin-top: auto;" data-i18n="Melaka">马六甲一日游4人只需RM600</strong>
                             </h2>
                             <div class="post-prev-img">
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/yvG6lD0bDbQb3A3bTzShP43sSb8vxrw2Dedi0Ldw.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Melaka TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/melaka');" href="https://malaysiakliatour.com/trip/states/melaka"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Melaka_TOUR">马六甲旅游</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/melaka/melaka.html');" href="Pages/melaka/melaka.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/kedah">
+                            href="Pages/kedah/kedah.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
                                     style="margin-top: auto;"></strong>
                             </h2>
@@ -330,15 +352,15 @@
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/i3zmInVwYdlKHGgvG22SdWRpuiMq3AWcLmozmJjt.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Kedah TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/kedah');" href="https://malaysiakliatour.com/trip/states/kedah"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Kedah">吉打之旅</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/kedah/kedah.html');" href="Pages/kedah/kedah.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/pahang">
+                            href="Pages/pahang/pahang.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
                                     style="margin-top: auto;"></strong>
                             </h2>
@@ -346,9 +368,9 @@
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/GR56Pv9cZeIapaZi7ztAhGREJIWK9zbJtfYwXB7q.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Pahang TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/pahang');" href="https://malaysiakliatour.com/trip/states/pahang"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Pahang_TOUR">彭亨旅游</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/pahang/pahang.html');" href="Pages/pahang/pahang.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
@@ -362,15 +384,15 @@
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/IGoEvzoQVe6qqbDmwFSohGCnqNx932lmR06tJC3j.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Terengganu TOUR</h3>
+                                <h3 data-i18n="Terengganu">登嘉楼州旅游</h3>
                                 <a onclick="return gtag_report_conversion_view('javascript:void(0)');" href="javascript:void(0)"
-                                    class="button medium shop-add-btn">View More</a>
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/perak">
+                            href="Pages/perak/perak.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
                                     style="margin-top: auto;"></strong>
                             </h2>
@@ -378,15 +400,15 @@
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/4jR0eR2RDP7atHHNiwzHuI72XtIIdjAKb4DYjmvw.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Perak TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/perak');" href="https://malaysiakliatour.com/trip/states/perak"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Perak_TOUR">霹雳游</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/perak/perak.html');" href="Pages/perak/perak.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/negeri-sembilan">
+                            href="./Pages/negeri-sembilan/negeri-sembilan.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
                                     style="margin-top: auto;"></strong>
                             </h2>
@@ -394,15 +416,15 @@
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/xeRGpwomQRGH1JqOMzAQQM8F4bJBk1ZcDyKlXXZA.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Negeri Sembilan TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/negeri-sembilan');" href="https://malaysiakliatour.com/trip/states/negeri-sembilan"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Negeri">森美兰旅游</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/negeri-sembilan/negeri-sembilan.html');" href="Pages/negeri-sembilan/negeri-sembilan.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
                                     <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
-                            href="https://malaysiakliatour.com/trip/states/johor">
+                            href="Pages/johor/johor.html">
                             <h2 style="min-height: 130px; display: flex;"><strong
                                     style="margin-top: auto;"></strong>
                             </h2>
@@ -410,13 +432,13 @@
                                 <img src="https://maple.sgp1.digitaloceanspaces.com/contents/qWrkvh63yluIhaBzT8uk1cLa9MbLTmHC0xennFWV.jpg" alt="img">
                             </div>
                             <div class="post-prev-title text-center">
-                                <h3>Johor TOUR</h3>
-                                <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/johor');" href="https://malaysiakliatour.com/trip/states/johor"
-                                    class="button medium shop-add-btn">View More</a>
+                                <h3 data-i18n="Johor_TOUR">柔佛旅游</h3>
+                                <a onclick="return gtag_report_conversion_view('./Pages/johor/johor.html');" href="Pages/johor/johor.html"
+                                    class="button medium shop-add-btn" data-i18n="View_More">查看更多</a>
                             </div>
                         </a>
                     </div>
-                                    <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
+                                    <!-- <div class="col-sm-6 col-md-3 col-lg-3 pb-20">
                         <a
                             href="https://malaysiakliatour.com/trip/states/hatyai">
                             <h2 style="min-height: 130px; display: flex;"><strong
@@ -428,10 +450,10 @@
                             <div class="post-prev-title text-center">
                                 <h3>Thailand Hatyai TOUR</h3>
                                 <a onclick="return gtag_report_conversion_view('https://malaysiakliatour.com/trip/states/hatyai');" href="https://malaysiakliatour.com/trip/states/hatyai"
-                                    class="button medium shop-add-btn">View More</a>
+                                    class="button medium shop-add-btn">查看更多</a>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                             </div>
         </div>
     </div>
@@ -441,209 +463,208 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="mb-50">
-                        <h2 class="section-title pr-0 mb-30">POPULAR <span class="bold">TOURS</span></h2>
-                        <p>Our packages are designed to suit both solo travellers and groups. Whether you're seeking a solo escape or planning a memorable trip with friends or family, we've got you covered. Our travel package will transport you to an exotic
-                            destination that's been handpicked for its breathtaking beauty and cultural richness. Whether it's a tropical paradise, a historic city, or an off-the-beaten-path gem, you're in for a treat.
+                        <h2 class="section-title pr-0 mb-30" ><span data-i18n="POPULAR">受欢迎的</span> <span class="bold" data-i18n="POPULARBold">旅游</span></h2>
+                        <p data-i18n="POPULARText">我们的套餐专为适合单独旅行者和团体旅行者而设计。无论您是寻求独自逃离，还是计划与朋友或家人一起度过难忘的旅行，我们都能满足您的需求。我们的旅行套餐将带您前往充满异国情调的目的地，该目的地因其令人惊叹的美景和丰富的文化而精心挑选。无论是热带天堂、历史名城还是人迹罕至的瑰宝，您都将得到享受。
                         </p>
                     </div>
                     <div class="row">
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/family-leisure">
+                            <a href="Pages/family-leisure/family-leisure.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/tEfnrjfk9thri8nOBCtluIqk6BcqamOW0Ng6DyUs.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Family Leisure</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Family">家庭休闲</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Family Kids</span>
-                                    <span class="label label-default">Family Time</span>
-                                    <span class="label label-default">School Holiday</span>
-                                    <span class="label label-default">Public Holiday</span>
+                                    <span class="label label-default" data-i18n="Kids">家庭儿童</span>
+                                    <span class="label label-default" data-i18n="Time">家人在一起的时间</span>
+                                    <span class="label label-default" data-i18n="School">学校假期</span>
+                                    <span class="label label-default" data-i18n="Public_Holiday">公众假期</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/family-leisure');" href="https://malaysiakliatour.com/trip/trips/family-leisure">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/family-leisure/family-leisure.html');" href="Pages/family-leisure/family-leisure.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/ticket-free">
+                            <a href="Pages/ticket-free/ticket-free.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/yKAdfQcvELpfLpGOeAFnasBzwmKfls4tFNlLXF5k.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Ticket-Free</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Ticket">免票</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Budget Travelers</span>
-                                    <span class="label label-default">Economical</span>
-                                    <span class="label label-default">Retirees</span>
-                                    <span class="label label-default">Students</span>
+                                    <span class="label label-default" data-i18n="Budget">预算旅行者</span>
+                                    <span class="label label-default" data-i18n="Economical">经济</span>
+                                    <span class="label label-default" data-i18n="Retirees">退休人员</span>
+                                    <span class="label label-default" data-i18n="Students">学生</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/ticket-free');" href="https://malaysiakliatour.com/trip/trips/ticket-free">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/ticket-free/ticket-free.html');" href="Pages/ticket-free/ticket-free.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/education">
+                            <a href="Pages/education/education.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/JQJ1dUZo0Ep5T64OvFSxHeHrsk1rHx3gL5kWhJRp.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Education</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Education">教育</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Students</span>
-                                    <span class="label label-default">School Trip</span>
-                                    <span class="label label-default">Learning Trip</span>
-                                    <span class="label label-default">Knowledgeable</span>
+                                    <span class="label label-default" data-i18n="educatStudents">学生</span>
+                                    <span class="label label-default" data-i18n="School_Trip">校园旅行</span>
+                                    <span class="label label-default" data-i18n="Learning_Trip">学习之旅</span>
+                                    <span class="label label-default" data-i18n="Knowledgeable">知识渊博</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/education');" href="https://malaysiakliatour.com/trip/trips/education">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/education/education.html');" href="Pages/education/education.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/foodie">
+                            <a href="Pages/foodie/foodie.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/9SGffmb6O4IZGQ2CuX3eoprEbbAcKUE2ZGYdlgEI.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Foodie</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Foodie">美食家</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Food Lovers</span>
-                                    <span class="label label-default">Influencers</span>
-                                    <span class="label label-default">Food Bloggers</span>
-                                    <span class="label label-default">Food Culture</span>
-                                    <span class="label label-default">Must Eat Destinations</span>
+                                    <span class="label label-default" data-i18n="Lovers">美食爱好者</span>
+                                    <span class="label label-default" data-i18n="Influencers">影响者</span>
+                                    <span class="label label-default" data-i18n="Bloggers">美食博主</span>
+                                    <span class="label label-default" data-i18n="Culture">饮食文化</span>
+                                    <span class="label label-default" data-i18n="Destinations">必吃目的地</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/foodie');" href="https://malaysiakliatour.com/trip/trips/foodie">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/foodie/foodie.html');" href="Pages/foodie/foodie.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/natural">
+                            <a href="Pages/natural/natural.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/QvrmhdrXOe8N7JRX0JLsrdietEXNAgyPl2xzdkXB.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Natural</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Natural">自然的</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Nature Enthusiasts</span>
-                                    <span class="label label-default">Wildlife Encounters</span>
-                                    <span class="label label-default">Eco-Tourism</span>
-                                    <span class="label label-default">Natural Beauty</span>
+                                    <span class="label label-default" data-i18n="Enthusiasts">自然爱好者</span>
+                                    <span class="label label-default" data-i18n="Wildlife">邂逅野生动物</span>
+                                    <span class="label label-default" data-i18n="Eco_Tourism">生态旅游</span>
+                                    <span class="label label-default" data-i18n="Beauty">自然美</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/natural');" href="https://malaysiakliatour.com/trip/trips/natural">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/natural/natural.html');" href="Pages/natural/natural.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/social-media">
+                            <a href="Pages/social-media.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/FZ6IINDAGXzRxK6VTDaxf0bCgpRHmVUvWR97pRfe.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Social Media Hotspot</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Social">社交媒体热点</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Influencers</span>
-                                    <span class="label label-default">Instagrammable</span>
-                                    <span class="label label-default">Bloggers</span>
-                                    <span class="label label-default">Vloggers</span>
-                                    <span class="label label-default">TikTokers</span>
+                                    <span class="label label-default" data-i18n="socialInfluencers" >影响者</span>
+                                    <span class="label label-default" data-i18n="Instagrammable">适合 Instagram 的</span>
+                                    <span class="label label-default" data-i18n="socialBloggers">博主</span>
+                                    <span class="label label-default" data-i18n="Vloggers">视频博主</span>
+                                    <span class="label label-default" data-i18n="TikTokers">抖音用户</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/social-media');" href="https://malaysiakliatour.com/trip/trips/social-media">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/social-media.html');" href="Pages/social-media.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/historical">
+                            <a href="Pages/historical/historical.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/aP46PWuV0xqpPmkhhygNnEoGK278GNkV3HUDYsV9.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Historical Bulding</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Historical">历史建筑</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Family Kids</span>
-                                    <span class="label label-default">Art &amp; Design Enthusiasts</span>
-                                    <span class="label label-default">History Buffs</span>
-                                    <span class="label label-default">Art &amp; Culture Lovers</span>
+                                    <span class="label label-default" data-i18n="FamilyKids">家庭儿童</span>
+                                    <span class="label label-default" data-i18n="artEnthusiasts">艺术与艺术设计爱好者</span>
+                                    <span class="label label-default" data-i18n="Buffs">历史爱好者</span>
+                                    <span class="label label-default" data-i18n="CultureLovers">艺术与艺术文化爱好者</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/historical');" href="https://malaysiakliatour.com/trip/trips/historical">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/historical/historical.html');" href="Pages/historical/historical.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="popular-tour col-sm-6 col-md-3 col-lg-3 pb-80">
-                            <a href="https://malaysiakliatour.com/trip/trips/romantic">
+                            <a href="Pages/romantic.html">
                                 <div class="post-prev-img">
                                     <img src="https://maple.sgp1.digitaloceanspaces.com/contents/gHajPkHlhOPbzSkzmNCMdH1pvb0LNkuMHQEiGwk4.jpg" alt="img">
                                 </div>
                                 <div class="sale-label-cont">
-                                    <span class="sale-label label-danger bg-red">SALE</span>
+                                    <span class="sale-label label-danger bg-red" data-i18n="SALE">销售</span>
                                 </div>
                                 <div class="post-prev-title mb-5">
-                                    <h3><a class="font-norm a-inv" href="#">Romantic Dating</a></h3>
+                                    <h3><a class="font-norm a-inv" href="#" data-i18n="Romantic">浪漫约会</a></h3>
                                 </div>
                                 <div class="mb-5">
-                                    <span class="label label-default">Couples</span>
-                                    <span class="label label-default">Honeymooners</span>
-                                    <span class="label label-default">Celebrating Special Occasions</span>
+                                    <span class="label label-default" data-i18n="Couples">情侣</span>
+                                    <span class="label label-default" data-i18n="Honeymooners">度蜜月的人</span>
+                                    <span class="label label-default" data-i18n="Celebrating">庆祝特殊场合</span>
                                 </div>
                                 <div class="post-prev-more-cont clearfix">
                                     <div class="shop-add-btn-cont">
-                                        <a class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('https://malaysiakliatour.com/trip/trips/romantic');" href="https://malaysiakliatour.com/trip/trips/romantic">
-                                                VIEW MORE</a>
+                                        <a data-i18n="View_More" class="button medium shop-add-btn" onclick="return gtag_report_conversion_contact('./Pages/romantic.html');" href="Pages/romantic.html">
+                                                查看更多</a>
                                     </div>
                                 </div>
                             </a>
@@ -660,7 +681,7 @@
 
                 <div class="col-xs-12">
                     <div class="fes4-box wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <h1 class="special-title">Our package includes</h1>
+                        <h1 class="special-title" data-i18n="Ourpackage">我们的套餐包括</h1>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -669,11 +690,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Driver.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Driver</span></h3>
+                            <h3><span class="bold" data-i18n="ourDriver">司机</span></h3>
                             <p></p>
                         </div>
-                        <div class="">
-                            Enjoy a hassle-free and safe journey with our professional driver
+                        <div class="" data-i18n="hassle_free">
+                            与我们的专业司机一起享受无忧无虑、安全的旅程
                         </div>
                     </div>
                 </div>
@@ -683,11 +704,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Fare.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Fare</span></h3>
+                            <h3><span class="bold" data-i18n="Fare">票价</span></h3>
                             <p></p>
                         </div>
-                        <div class="">
-                            Flexibility to explore your destination at your own pace by package include convenient car fares
+                        <div class="" data-i18n="fareText">
+                            灵活地按照自己的节奏探索目的地，包括便捷的汽车票价
                         </div>
                     </div>
                 </div>
@@ -697,11 +718,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Toll.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Toll</span></h3>
+                            <h3><span class="bold" data-i18n="Toll">收费</span></h3>
                             <p></p>
                         </div>
-                        <div class="">
-                            Enjoy a smooth and uninterrupted journey without toll fares
+                        <div class="" data-i18n="Tolltext">
+                            享受顺畅不间断的旅程，无需支付过路费
                         </div>
                     </div>
                 </div>
@@ -714,11 +735,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/PARKING Fee.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Parking</span></h3>
+                            <h3><span class="bold" data-i18n="Parking">停車處</span></h3>
                             <p></p>
                         </div>
-                        <div class="">
-                            Say goodbye to parking hassles and unexpected charges
+                        <div class="" data-i18n="Parkingtext">
+                            告别停车麻烦和意外收费
                         </div>
                     </div>
                 </div>
@@ -728,11 +749,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Custom Location Pick Up.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Custom pickup</span></h3>
+                            <h3><span class="bold" data-i18n="Custompickup">定制皮卡</span></h3>
                             <p></p>
                         </div>
-                        <div class="">
-                            Personalized pick-up options, making your trip uniquely yours
+                        <div class="" data-i18n="Custompickuptext">
+                            个性化的接送选项，让您的旅程独一无二
                         </div>
                     </div>
                 </div>
@@ -742,11 +763,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Mineral water.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Mineral water</span></h3>
+                            <h3><span class="bold" data-i18n="Mineralwater">矿泉水</span></h3>
                             <p></p>
                         </div>
-                        <div class="">
-                            We provide you complimentary mineral water in all our transports, ensuring you remain comfortable as you explore
+                        <div class="" data-i18n="Mineralwatertext">
+                            我们在所有交通工具中为您提供免费矿泉水，确保您在探索时保持舒适
                         </div>
                     </div>
                 </div>
@@ -755,7 +776,7 @@
         </div>
     </div>
 
-    <div class="page-section fes4-cont section-promo">
+    <!-- <div class="page-section fes4-cont section-promo">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 fes1-img-cont wow fadeInUp mb-20">
@@ -784,9 +805,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="page-section pt-110-b-80-cont">
+    <!-- <div class="page-section pt-110-b-80-cont">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -795,7 +816,7 @@
                         <p>Have a question or need assistance? We're here to help! Fill out the form below, and our team will get back to you promptly. Your inquiries are important to us, and we look forward to serving you.</p>
                     </div>
 
-                    <!-- CONTACT FORM -->
+                   
                     <div class="">
                         <form id="contact-form" action="https://malaysiakliatour.com/contact-us" method="POST" novalidate="novalidate">
                             <input type="hidden" name="_token" value="yML7DDZfQNLgZHCOvjo6BsFceHvd2DvaER0HexkE" autocomplete="off">
@@ -805,12 +826,12 @@
                                     <div class="row">
 
                                         <div class="col-md-12 mb-23">
-                                            <!-- <label>Your name *</label> -->
+                                        
                                             <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="controled " name="name" id="name" placeholder="NAME" required="" aria-required="true">
                                         </div>
 
                                         <div class="col-md-12 mb-23">
-                                            <!-- <label>Your email address *</label> -->
+                                           
                                             <input type="email" value="" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" maxlength="100" class="controled " name="email" id="email" placeholder="EMAIL" required="" aria-required="true">
                                         </div>
 
@@ -818,7 +839,7 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <!-- <label>Message *</label> -->
+                                    
                                     <textarea maxlength="5000" data-msg-required="Please enter your message" rows="4" class="controled " name="message" id="message" placeholder="MESSAGE" required="" aria-required="true"></textarea>
 
                                     <div class="text-right text-center-xxs">
@@ -884,7 +905,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="page-section fes4-cont">
         <div class="container">
@@ -892,7 +913,7 @@
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div class="fes4-box wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                        <h2 class="section-title">Why <span class="bold">Choose Us</span></h2>
+                        <h2 class="section-title"><span data-i18n="why">为什么</span> <span class="bold" data-i18n="whybold">选择我们</span></h2>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -901,11 +922,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Expertise.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Expertise</span></h3>
+                            <h3><span class="bold" data-i18n="Expertisebold">专业知识</span></h3>
                             <p></p>
                         </div>
-                        <div>
-                            Our team brings years of experience and in-depth knowledge of diverse destinations to the table.
+                        <div class="" data-i18n="Expertisetext">
+                            我们的团队拥有多年的经验和对不同目的地的深入了解。
                         </div>
                     </div>
                 </div>
@@ -915,11 +936,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Variety.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Variety</span></h3>
+                            <h3><span class="bold" data-i18n="Variety">种类</span></h3>
                             <p></p>
                         </div>
-                        <div>
-                            We provide multiple choice of itineraries.
+                        <div data-i18n="VarietyText">
+                            我们提供多种行程选择。
                         </div>
                     </div>
                 </div>
@@ -933,12 +954,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Personalization.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Personalization</span></h3>
+                            <h3><span class="bold" data-i18n="Personalization">个性化</span></h3>
                             <p></p>
                         </div>
-                        <div>
-                            We tailor each trip to the needs of each group and accept additions and deletions from the itinerary.
-                        </div>
+                        <div data-i18n="Personalizationtext">
+                            我们根据每个团体的需求定制每次旅行，并接受行程的添加和删除。                        </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -947,11 +967,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/Convenient.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Convenient</span></h3>
+                            <h3><span class="bold" data-i18n="Convenient">方便的</span></h3>
                             <p></p>
                         </div>
-                        <div>
-                            We plan the itinerary and prepare transportation for you.
+                        <div data-i18n="Convenienttext">
+                            我们为您规划行程并准备交通。
                         </div>
                     </div>
                 </div>
@@ -961,11 +981,11 @@
                             <div class="fes4-box-icon">
                                 <img src="https://malaysiakliatour.com/custom/Icon/CUSTOMER Centric.png" width="46" alt="">
                             </div>
-                            <h3><span class="bold">Customer-Centric</span></h3>
+                            <h3><span class="bold" data-i18n="CustomerCentric">以顾客为中心</span></h3>
                             <p></p>
                         </div>
-                        <div>
-                            Your satisfaction and peace of mind are our top priorities. We are here to support you throughout your journey.
+                        <div data-i18n="CustomerCentrictext">
+                            您的满意和安心是我们的首要任务。我们将在您的整个旅程中为您提供支持。
                         </div>
                     </div>
                 </div>
@@ -978,15 +998,11 @@
 
     <div class="plr-30 plr-0-767 clearfix">
         <div class="plr-30 pt-50 pb-30">
-            <h2 class="text-center font-black mb-60 bold"><span class="bold">Explore Our Customer's Adventures
-                    Through Stunning Tour Snaps
+            <h2 class="text-center font-black mb-60 bold"><span class="bold" data-i18n="ExploreText">通过令人惊叹的旅游快照探索客户的冒险经历
             </h2>
 
-            <p class="text-center" style="margin-bottom: 80px">
-                Immerse yourself in the joy of travel with glimpses from our customers' past tours. Explore Malaysia
-                through their eyes in these stunning snapshots—each a testament to the happiness and unforgettable
-                moments we create. Let these images inspire your next adventure with us. </p>
-
+            <p class="text-center" style="margin-bottom: 80px" data-i18n="Immerse">
+                回顾我们客户过去的旅行，让自己沉浸在旅行的乐趣中。在这些令人惊叹的快照中通过他们的眼睛探索马来西亚 - 每一张都证明了我们创造的幸福和难忘的时刻。让这些图像激发您与我们的下一次冒险。
             <div class="relative">
                 <ul class="port-grid display-hover-on-mobile port-grid-3 masonry clearfix" id="items-grid">
                                             <li role="button" class="port-item mix">
@@ -1285,15 +1301,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="section-title pr-0 mb-60">About <span class="bold">Us</span></h2>
-            <p>At PRO TEAM HOLIDAY SDN BHD, we are passionate about transforming ordinary journeys into extraordinary adventures. Our mission is to provide you with seamless travel experiences that can save our customers time but can create lasting memories.
-                We take the stress out of planning and let you focus on the joy of exploring the world. Our dedicated team of travel experts works tirelessly to curate seamless travel packages that cater to your unique preferences, interests, and desires.</p>
+                        <h2 class="section-title pr-0 mb-60"><span data-i18n="AboutUs">关于</span> <span class="bold" data-i18n="Aboutbold">我们</span></h2>
+            <p data-i18n="Abouttext">在 PRO TEAM HOLIDAY SDN BHD，我们热衷于将平凡的旅程转变为非凡的冒险。我们的使命是为您提供无缝的旅行体验，不仅可以节省客户的时间，还可以创造持久的回忆。我们消除了规划的压力，让您专注于探索世界的乐趣。我们的专业旅行专家团队孜孜不倦地努力策划无缝旅行套餐，以满足您独特的喜好、兴趣和愿望。</p>
         </div>
     </div>
     </div>
     </div>
 
-    <div class="port-view-more-cont-dark">
+    <!-- <div class="port-view-more-cont-dark">
         <a class="port-view-more-dark " href="https://wa.me/+601126158738" target="_blank">You
                 Can Find Us At: <br><br>
                 Whatsapp / Tel: +601126158738
@@ -1301,9 +1316,9 @@
                 <br><br>
                 Address: Atria SOFO Suites, Tower A, Jalan SS 22/23, 47400 Petaling Jaya, Damansara Jaya, Selangor
             </a>
-    </div>
+    </div> -->
 
-    <footer id="footer1" class="page-section text-center">
+    <!-- <footer id="footer1" class="page-section text-center">
         <div class="container">
 
 
@@ -1311,15 +1326,15 @@
                 &copy; PRO TEAM HOLIDAY SDN. BHD. ALL RIGHT RESERVED
             </div>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="whatsApp_button_app">
+    <!-- <div class="whatsApp_button_app">
         <a onclick="return gtag_report_conversion_contact('https://wa.me/+601126158738');" href="https://wa.me/+601126158738" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
-
+-->
     <p id="back-top">
-        <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
-    </p>
+        <a href="#top" title="Back to Top"><i class="fa-solid fa-chevron-up"></i></a>
+    </p> 
     </div>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -1395,6 +1410,7 @@
             }
         }, 1000);
     </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
